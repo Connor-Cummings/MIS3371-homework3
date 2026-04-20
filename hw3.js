@@ -113,6 +113,23 @@ function validateDob() {
     }
 }
 
+// Js code for SSN formatting
+function formatSsn() {
+    const ssnInput = document.getElementById("ssn");
+    let ssn = ssnInput.value.replace(/\D/g, "");
+
+    if (ssn.length > 9) {
+        ssn = ssn.slice(0, 9);
+    }
+
+    if (ssn.length > 5) {
+        ssn = ssn.slice(0, 3) + "-" + ssn.slice(3, 5) + "-" + ssn.slice(5);
+    } else if (ssn.length > 3) {
+        ssn = ssn.slice(0, 3) + "-" + ssn.slice(3);
+    }
+
+    ssnInput.value = ssn;
+}
 // Js code for validating SSN
 function validateSsn() {
     const ssn = document.getElementById("ssn").value;
