@@ -158,6 +158,18 @@ function validateCity() {
         return true;
     }
 }
+//Js code for validating state
+function validateState() {
+    const state = document.getElementById("state").value;
+
+    if (state === "") {
+        document.getElementById("state-error").innerHTML = "Please select a state";
+        return false;
+    } else {
+        document.getElementById("state-error").innerHTML = "";
+        return true;
+    }
+}
 
 // Js code for validating Zip Code
 function validateZcode() {
@@ -416,11 +428,15 @@ function validateEverything() {
     }
 
     if (!validateCity()) {
-        valid = false;
+    valid = false;
+    }
+
+    if (!validateState()) {
+    valid = false;
     }
 
     if (!validateZcode()) {
-        valid = false;
+    valid = false;
     }
 
     if (!validateEmail()) {
