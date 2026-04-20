@@ -236,8 +236,8 @@
                 <tr>
                     <td class="td1"><label for="state">State:</label></td>
                         <td>
-                            <select id="state" name="state">
-                                <option selected disabled>Please Select One</option>
+                            <select id="state" name="state" onblur="validateState()" onchange="validateState()" required>
+                                <option value="" selected disabled>Please Select One</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
@@ -292,6 +292,8 @@
                                 <option value="WI">Wisconsin</option>   
                                 <option value="WY">Wyoming</option> 
                             </select>
+                            <br>
+                            <span class="error" id="state-error"></span>
                         </td>
                 </tr>
                 <tr>
