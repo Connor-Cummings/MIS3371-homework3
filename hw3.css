@@ -1,0 +1,225 @@
+/*
+Name: Connor Cummings
+Date created: 04/10/2026
+Date last edited: 04/19/2026
+Version: 3.0
+Description: Homework 3 CSS
+*/
+header {
+    width: 100%;
+    background-color: #0F4C81; /* deep medical blue */
+    color: #FFFFFF;
+    border-bottom: 3px solid #2CA6A4; /* teal accent */
+    padding: 10px 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F7FA; /* clean light gray-blue */
+    margin: 0;
+    height: 100%;
+    min-height: 100vh; /* page is height of the viewport */
+    color: #1F2937; /* readable dark slate */
+}
+
+form {
+flex-grow: 1;
+    background-color: #FFFFFF; /* clean “card” look */
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+h1, h2 {
+    text-align: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+    flex-grow: 1;
+    color: #0F4C81;
+}
+main {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    flex-grow: 1;
+    color: #1F2937;
+}
+.image {
+    text-align: left;
+}
+.td1 {
+
+    text-align: right;
+    font-family: "Optima", Arial, sans-serif;
+    font-weight: normal;
+    color: #374151;
+    padding-right: 8px;
+}
+th {
+    text-align: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #0F4C81;
+    padding: 8px 0;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0F4C81; /* deep medical blue */
+    height: 2.0rem;
+}
+#footer {
+    text-align: right;
+    font-family: "Optima", Arial, sans-serif;
+    font-weight: normal;
+    margin-right: 10px;
+    color: #FFFFFF;
+}
+label {
+
+    text-align: right;
+    font-family: "Optima", Arial, sans-serif;
+    font-weight: normal;
+    color: #374151;
+}
+input {
+    text-align: left;
+    font-family: "Optima", Arial, sans-serif;
+    font-weight: normal;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 8px 10px;
+    background-color: #FFFFFF;
+    color: #111827;
+}
+textarea {
+    text-align: left;
+    font-family: "Optima", Arial, sans-serif;
+    font-weight: normal;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 8px 10px;
+    background-color: #FFFFFF;
+    color: #111827;
+}
+
+#today {
+    text-align: left;
+    font-family: "Optima", Arial, sans-serif;
+    font-weight: normal;
+    margin-right: 5px;
+    color: #FFFFFF;
+}
+p {
+    text-align: right;
+    font-family: "Optima", Arial, sans-serif;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+footer a {
+    color: #FFFFFF;/* makes link readable */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer a:hover {
+ color: #2CA6A4;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    font-family:  "Times New Roman", Arial;
+    font-weight: normal;
+}
+
+.pass-message {
+    text-align:  right;
+    font-family: "Times New Roman", Arial;
+    font-weight: normal;
+    position: relative;
+    left: 100px;
+    background: transparent;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: red;
+}
+
+#review {
+    margin-top: 5px;
+}
+
+table.output,
+tr.output,
+td.output {
+    width: 500px;
+    background-color:#D2B48C;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color:black
+}
+
+td.outputdata {
+    width: 500px;
+    background-color: rgb(214, 191, 127);
+    padding: 10px;
+    border-spacing: 2px;
+}
+/* Alert box styling */
+#alert-box {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+}
+
+#alert-content {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 300px;
+    height: 130px;
+    margin: auto;
+    margin-top: 20%;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+#alert-content h4 {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Optima", Arial, sans-serif;
+    font-weight: normal;
+    color: #1F2937;
+}
+
+#close-alert {
+    background-color: #FFFFFF;
+    border: 1px solid #0F4C81;
+    color: #0F4C81;
+    font-size: 15px;
+    font-weight: bold;
+    height: 28px;
+    width: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+    font-family: "Optima", Arial, sans-serif;
+}
+
+#close-alert:hover {
+    background-color: #2CA6A4;
+    color: #FFFFFF;
+}
