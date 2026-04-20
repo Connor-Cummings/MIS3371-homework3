@@ -210,7 +210,11 @@
                             maxlength="30" 
                             title="Optional. Apartment, suite, unit, building, or room number."
                             placeholder="Optional: Apt, suite, unit, etc."
+                            oninput="validateAddress2()"
+                            onblur="validateAddress2()"
                         />
+                        <br>
+                        <span class="error" id="address2-error"></span>
                     </td>
                 </tr>
 
